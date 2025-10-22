@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Aman Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+   
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://img.freepik.com/premium-vector/man-profile_1083548-15963.jpg?semt=ais_hybrid&w=740&q=80" alt="Profile photo" class="profile-pic">
+        <p>Hello! My name is <strong>Ayan Aman</strong>. I am learning Web Development, and this is my first portfolio project using HTML and CSS.</p>
+        <hr>
+    </section>
+
+   
+    <section id="skills">
+        <h2>My Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Expert</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Learning</td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+
+    
+    <section id="project">
+        <h2>My Projects</h2>
+        <p><strong>Project 1</strong></p>
+        <img src="https://static.wixstatic.com/media/11062b_82e8f1198e4d4a61be84cdd887e390d5~mv2.jpeg/v1/fill/w_218,h_123,fp_0.50_0.50,q_90,enc_avif,quality_auto/11062b_82e8f1198e4d4a61be84cdd887e390d5~mv2.webp" alt="Project screenshot" class="project-img">
+        <p><strong>Project 2</strong></p>
+        <img src="https://static.wixstatic.com/media/11062b_777800d4dfad4e6abfe772711590286d~mv2.jpg/v1/fill/w_318,h_239,fp_0.50_0.50,q_90,enc_avif,quality_auto/11062b_777800d4dfad4e6abfe772711590286d~mv2.webp" alt="Project screenshot" class="project-img">
+        
+        <p>A simple portfolio project using HTML and CSS.</p>
+        <hr>
+    </section>
+
+  
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <table class="contact-table">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message</label></td>
+                    <td><textarea id="message" name="message" rows="4" placeholder="Type your message"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="send-btn">Send</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <button id="topBtn" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
